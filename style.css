@@ -1,0 +1,286 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Yatra+One&family=Lemon&display=swap');
+.recommendations-body {
+    background: url("../static/images.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh; /* Ensures full height */
+    overflow-y: auto; /* Allows scrolling */
+}
+
+
+
+
+.recommendations-body {
+    overflow-y: auto;
+    max-height: 100vh;
+    padding-bottom: 50px;
+}
+.recommendations-body h1 {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 10;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.recommendations-body {
+    min-height: 100vh;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recommendation-list {
+    flex-grow: 1; /* Makes sure the list takes space and prevents extra space below */
+}
+
+.back-button {
+    margin-bottom: 20px; /* Ensure some spacing above the button */
+}
+
+.recommendations-body h1 {
+    color: white; /* Change to any visible color */
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+.recommendations-body {
+    overflow: visible; /* Allows the heading to be shown */
+    padding-top: 20px; /* Ensures it's not hidden at the top */
+}
+.recommendations-body h1 {
+    position: relative;
+    z-index: 10;
+}
+
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    overflow: hidden;
+}
+
+/* Background Image */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/static/images.jpg') no-repeat center center;
+    background-size: cover;
+    filter: brightness(30%) blur(3px);
+    z-index: -1;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.12);
+    padding: 30px 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Homepage Heading */
+.title {
+    font-family: 'Limelight', sans-serif;
+    color: #d65d38;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Description */
+.description {
+    color: #e37145;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+/* Form Styling */
+.form-container {
+    text-align: center;
+}
+
+h2 {
+    color: rgba(255, 255, 255, 0.86); /* Changed color for "Enter User ID" heading */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Input Box */
+input[type="number"] {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+input[type="number"]::placeholder {
+    color: #f4a261;
+}
+
+/* Button */
+button {
+    background: linear-gradient(45deg, #e76f51, #f4a261);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #f4a261, #e76f51);
+    transform: scale(1.05);
+}
+
+/* Recommendations Page */
+.recommendations-body {
+    font-family: 'Yatra One', cursive;
+    background: linear-gradient(135deg, #264653, #2a9d8f);
+    text-align: center;
+    padding: 30px;
+
+}
+
+/* Recommendations Heading */
+.recommendation-heading {
+    font-family: 'Lemon', serif;
+    color: #ffbe0b;
+    text-align: center;
+}
+
+/* Recommendation List */
+.recommendation-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.recommendation-list li {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.recommendation-list li:hover {
+    transform: translateY(-5px);
+}
+
+.recommendation-list li a {
+    text-decoration: none;
+    color: #e76f51;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.recommendation-list li a:hover {
+    color: #f4a261;
+}
+
+/* Back Button */
+.back-button {
+    background: #e76f51;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background: #f4a261;
+    transform: scale(1.05);
+}
+.recommendations-body h1 {
+    color: white;
+    font-size: 28px;
+}
+.back-button {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: white;
+}
+.recommendations-body h1 {
+    position: relative;
+    z-index: 10;
+}
+
+/* Recommendations Page */
+.recommendations-body {
+    font-family: 'Yatra One', cursive;
+    background: url("../static/images.jpg") no-repeat center center fixed; /* Fixed background image */
+    background-size: cover; /* Ensures full coverage without cutting */
+    text-align: center;
+    padding: 30px;
+    min-height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Allows scrolling */
+}
+
+/* Recommendations Heading */
+.recommendations-body h1 {
+    font-family: 'Lemon', serif;
+    color: #ffbe0b; /* Bright yellow for visibility */
+    font-size: 32px; /* Adjusted size for better visibility */
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds shadow for contrast */
+    margin-top: 20px;
+    position: relative;
+    z-index: 10; /* Ensures it appears above other elements */
+}
+
+
+/* Recommendations Heading */
+.recommendations-body h1 {
+    font-family: 'Lemon', serif; /* Use the chosen font */
+    color: #ffbe0b; /* Bright yellow for visibility */
+    font-size: 36px; /* Larger size for better prominence */
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Shadow for contrast */
+
+    position: relative;
+
+}
+
