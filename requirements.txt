@@ -1,0 +1,4 @@
+Flask
+pandas
+scikit-surprise
+pickle5
